@@ -35,6 +35,10 @@
                   <h4 class="center">Sign Up</h4>
                 <form action="" id="signin-form">
                   <div class="input-field">
+                    <input type="text" name="" id="username">
+                    <label for="username">Username *</label>
+                  </div>
+                  <div class="input-field">
                     <input type="text" name="" id="fname">
                     <label for="fname">First Name *</label>
                   </div>
@@ -47,12 +51,12 @@
                     <label for="mobile">Mobile Number *</label>
                   </div>
                   <div class="input-field">
-                    <input type="text" name="" id="email">
+                    <input type="email" name="" id="email">
                     <label for="email">Email *</label>
                   </div>
                   <div class="input-field">
-                    <input type="text" name="" id="email">
-                    <label for="email">Password *</label>
+                    <input type="password" name="" id="password">
+                    <label for="password">Password *</label>
                   </div>
                   <button class="btn btn-large" id="signup">Sign Up</button>
                   <br><br>
@@ -93,5 +97,11 @@
     <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+      let token = Cookies.get('token')
+      if(token){
+        window.location.replace('./index.html')
+      }
+    </script>
   </body>
 </html>

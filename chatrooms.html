@@ -19,13 +19,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>MOT Pitch chartooms</title>
+    <title>MOT Pitch chatrooms</title>
   </head>
   <body>
     <nav>
       <div class="nav-wrapper z-depth-0 fixed">
         <div class="container">
-          <a href="#" class="brand-logo left"
+          <a href="#" class="brand-logo center"
             ><a href="#user"
               ><img
                 class="circle img z-depth-1"
@@ -36,41 +36,44 @@
           >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <a href="#!"><i class="material-icons left">home</i>Home</a>
+              <a href="index.html"><i class="material-icons left">home</i>Home</a>
             </li>
             <li>
-              <a href="#!"
+              <a href="about"
                 ><i class="material-icons left">featured_video</i>About MOT</a
               >
             </li>
             <li>
-              <a href="#!"><i class="material-icons left">book</i>Dealbook</a>
+              <a href="dealbook.html"><i class="material-icons left">book</i>Dealbook</a>
             </li>
             <li>
-              <a href="#!"
+              <a href="chatrooms.html"
                 ><i class="material-icons left">videocam</i>Chatrooms</a
               >
             </li>
             <li>
-              <a href="#!"
+              <a href="faq.html"
                 ><i class="material-icons left">info</i>FAQ and Contact</a
               >
             </li>
             <li>
-              <a href="#!"
+              <a href="our-partners.html"
                 ><i class="material-icons left">insert_link</i>Our Partners</a
               >
             </li>
-            <li>
-              <a class="waves-effect" href="#!"
-                ><i class="material-icons left">verified_user</i>Login</a
-              >
-            </li>
-            <li>
-              <a class="waves-effect" href="#!"
-                ><i class="material-icons left">queue</i>Sign Up</a
-              >
-            </li>
+            <div id="account-ctrl">
+                <li>
+                    <a class="waves-effect" href="./login.html"
+                      ><i class="material-icons left">verified_user</i>Login</a
+                    >
+                  </li>
+                  <li>
+                    <a class="waves-effect" href="./login.html"
+                      ><i class="material-icons left">queue</i>Sign Up</a
+                    >
+                  </li>
+            </div>
+            
           </ul>
         </div>
       </div>
@@ -96,26 +99,29 @@
         <a href="dealbook.html"><i class="material-icons">book</i>Dealbook</a>
       </li>
       <li>
-        <a href="#!"><i class="material-icons">videocam</i>Chatrooms</a>
+        <a href="chatrooms.html"><i class="material-icons">videocam</i>Chatrooms</a>
       </li>
       <li>
-        <a href="#!"><i class="material-icons">info</i>FAQ and Contact</a>
+        <a href="faq.html"><i class="material-icons">info</i>FAQ and Contact</a>
       </li>
       <li>
         <a href="#!"><i class="material-icons">insert_link</i>Our Partners</a>
       </li>
       <li><div class="divider"></div></li>
       <li><a class="subheader">Accounts and Settings</a></li>
-      <li>
-        <a class="waves-effect" href="#!"
-          ><i class="material-icons">verified_user</i>Login</a
-        >
-      </li>
-      <li>
-        <a class="waves-effect" href="#!"
-          ><i class="material-icons">queue</i>Create a new account</a
-        >
-      </li>
+      <div id="acc-box">
+        <li>
+            <a class="waves-effect" href="./login.html"
+            ><i class="material-icons">verified_user</i>Login</a
+            >
+        </li>
+        <li>
+            <a class="waves-effect" href="./login.html"
+            ><i class="material-icons">queue</i>Create a new account</a
+            >
+        </li>
+      </div>
+      
     </ul>
     <section class="section-heading">
       <div class="container">
@@ -172,25 +178,28 @@
         >
           <ul class="tabs tabs-fixed-width transparent white-text">
             <li class="tab col s3 white-text">
-              <a href="index.html" class="active white-text"
-                ><i class="material-icons">home</i></a
-              >
+                <a href="index.html" class="active white-text"
+                  ><i class="material-icons">home</i></a
+                >
+              </li>
+              <li class="tab col s3">
+                <a href="chatrooms.html" class="white-text"
+                  ><i class="material-icons">video_call</i></a
+                >
+              </li>
+              <li class="tab col s3">
+                <a href="dealbook.html" class="white-text"
+                  ><i class="material-icons">book</i></a
+                >
+              </li>
+            
+            <li class="tab col s3" id="dynamic-btn">
+                <a href="#test4" class="white-text"
+                    ><i class="material-icons">info</i></a
+                >
             </li>
-            <li class="tab col s3">
-              <a href="chatrooms.html" class="white-text"
-                ><i class="material-icons">video_call</i></a
-              >
-            </li>
-            <li class="tab col s3">
-              <a href="dealbook.html" class="white-text"
-                ><i class="material-icons">book</i></a
-              >
-            </li>
-            <li class="tab col s3">
-              <a href="#test4" class="white-text"
-                ><i class="material-icons">info</i></a
-              >
-            </li>
+            
+              
           </ul>
         </div>
       </div>
@@ -215,8 +224,8 @@
     ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
     <script src="./js/index.js"></script>
-    <script src='https://meet.jit.si/external_api.js'></script>
-    <script src="./js/jitsi.js"></script>
   </body>
 </html>
