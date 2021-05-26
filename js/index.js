@@ -245,7 +245,7 @@ $(document).ready(function(){
         }).then((result) => {
             Cookies.set('token', `${result.data.token}`)
             let token = Cookies.get('token')
-            window.location.replace('/index.html')
+            window.location.replace('https://cephaschapa.github.io/motpitch/')
         }).catch((err) => {
             alert('Something went wrong')
         });
