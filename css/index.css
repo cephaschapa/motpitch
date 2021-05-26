@@ -88,6 +88,38 @@ nav{
 .page-footer li i{
     color: #d32f2f;
 }
+.section-heading{
+    background: url('../assets/images/hero1.jpg') no-repeat center;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+.section-heading .box-mid{
+    position: relative;
+    top: 100px;
+    color: #fff;
+    text-align: center;
+}
+.section-deal-area h3{
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 10px;
+}
+.section-deal-area{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.section-deal-area .btn{
+    background: #d32f2f;
+    border-radius: 30px;
+}
+#submit-pitch{
+    background: #d32f2f;
+    border-radius: 30px;
+    font-family: inherit;
+}
+.modal{
+    border-radius: 30px;
+}
 @media screen and (min-width:468px) {
     .container{
         margin-left: 100px !important;

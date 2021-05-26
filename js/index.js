@@ -6,4 +6,5 @@ $(document).ready(function(){
         indicators: true
       });
       $('.slider').slider();
+      $('.modal').modal();
 })
