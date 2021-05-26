@@ -127,8 +127,42 @@ nav{
 .modal{
     border-radius: 30px;
 }
-.meeting-modal{
-    
+
+.section-login{
+    padding-top: 100px;
+    background: url('../assets/images/hero2.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    /* padding-bottom: 150px; */
+}
+.section-login .btn{
+    background: #d32f2f;
+    width: 100%;
+    border-radius: 30px;
+}
+.login-img{
+    height: 100px ;
+    width: 100px;
+    margin: auto;
+    position: relative;
+    margin-bottom: -50px;
+    border-radius: 50%;
+    top: -50px;
+
+}
+
+#signup-show{
+    text-align: center !important;
+    color: #d32f2f;
+}
+#login-show{
+    color: #d32f2f;
+    text-align: center !important;
+}
+.img-box{
+    width: 100%;
+    /* border: 1px solid #000; */
+    text-align: center;
 }
 @media screen and (min-width:468px) {
     .container{
