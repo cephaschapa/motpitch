@@ -117,27 +117,27 @@ $(document).ready(function(){
         
         `)
     }
-    $('#login-form').submit(function(e){
-        e.preventDefault();
-        let email = $('#email-b').val()
-        let password = $('#password').val()
+    // $('#login-form').submit(function(e){
+    //     e.preventDefault();
+    //     let email = $('#email-b').val()
+    //     let password = $('#password-l').val()
 
-        console.log(email, password)
-        axios({
-            method: 'post',
-            url: "https://mosioatunya.herokuapp.com/api/v1/auth/login",
-            data: {
-                email: email,
-                password: password
-            },
-        }).then((result) => {
-            Cookies.set('token', `${result.data.token}`)
-            let token = Cookies.get('token')
-            window.location.replace('/index.html')
-        }).catch((err) => {
+    //     console.log(email, password)
+    //     axios({
+    //         method: 'post',
+    //         url: "https://mosioatunya.herokuapp.com/api/v1/auth/login",
+    //         data: {
+    //             email: email,
+    //             password: password
+    //         },
+    //     }).then((result) => {
+    //         Cookies.set('token', `${result.data.token}`)
+    //         let token = Cookies.get('token')
+    //         window.location.replace('/index.html')
+    //     }).catch((err) => {
             
-        });
-    })
+    //     });
+    // })
 
     $('#logout').click(function(e){
         e.preventDefault()
@@ -202,7 +202,7 @@ $(document).ready(function(){
     $('#login-form').submit(function(e){
         e.preventDefault();
         let email = $('#email-b').val()
-        let password = $('#password').val()
+        let password = $('#password-l').val()
 
         console.log(email, password)
         axios({
@@ -228,7 +228,7 @@ $(document).ready(function(){
         let lname = $('#lname').val()
         let mobile = $('#mobile').val()
         let email = $('#email').val()
-        let password = $('#password').val()
+        let password = $('#password-s').val()
 
         console.log($(this))
         axios({
