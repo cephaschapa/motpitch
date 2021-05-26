@@ -146,14 +146,14 @@
                     waves-effect waves-light
                     red
                     btn-large
+                    modal-trigger
                   "
-                  ><i class="material-icons">navigate_next</i></a
+                   href="#modal1"><i class="material-icons">launch</i></a
                 >
               </div>
-              
                 <div class="card-content">
                   <div class="card-title">
-                    Hello
+                    INVESTOR READINESS
                   </div>
                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, recusandae repellat. Dolore assumenda soluta tempore, excepturi dolorem odio praesentium sequi sed eum deserunt tempora aut! Quo officiis tempora nesciunt cupiditate!</p>
                 </div>
@@ -172,23 +172,23 @@
         >
           <ul class="tabs tabs-fixed-width transparent white-text">
             <li class="tab col s3 white-text">
-              <a href="#test1" class="active white-text"
-                ><i class="material-icons">account_circle</i></a
+              <a href="index.html" class="active white-text"
+                ><i class="material-icons">home</i></a
               >
             </li>
             <li class="tab col s3">
-              <a href="#test2" class="white-text"
-                ><i class="material-icons">chat_bubble</i></a
+              <a href="chatrooms.html" class="white-text"
+                ><i class="material-icons">video_call</i></a
               >
             </li>
             <li class="tab col s3">
-              <a href="#test3" class="white-text"
-                ><i class="material-icons">explore</i></a
+              <a href="dealbook.html" class="white-text"
+                ><i class="material-icons">book</i></a
               >
             </li>
             <li class="tab col s3">
               <a href="#test4" class="white-text"
-                ><i class="material-icons">account_circle</i></a
+                ><i class="material-icons">info</i></a
               >
             </li>
           </ul>
@@ -197,30 +197,10 @@
     </footer>
     <!-- Modal -->
     <!-- Modal Structure -->
-    <div id="modal1" class="modal">
+    <div id="modal1" class="modal meeting-modal">
       <div class="modal-content">
-        <h4>Pitch Uploads</h4>
-        <p>Enter your pitch details</p>
-        <form action="">
-          <div class="input-fields">
-            <input type="text" id="title">
-            <label for="title">Title</label>
-          </div>
-          <div class="input-fields">
-            <input type="text" id="title">
-            <label for="title">Brief Description about pitch</label>
-          </div>
-          <div class="input-fields">
-            <input type="text" id="title">
-            <label for="title">Website or resource Link</label>
-          </div>
-          <div class="input-fields">
-            <input type="text" id="title">
-            <label for="title">Group Members</label>
-          </div>
-          <br><br>
-          <button class="btn btn-large" id="submit-pitch">SUBMIT PITCH</button>
-        </form>
+          <div id="meet-modal-box"></div>
+          <button class="btn btn-large" id="join-meeting">JOIN CHATROOM</button>
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
@@ -236,5 +216,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src='https://meet.jit.si/external_api.js'></script>
+    <script src="./js/jitsi.js"></script>
   </body>
 </html>

@@ -116,9 +116,19 @@ nav{
     background: #d32f2f;
     border-radius: 30px;
     font-family: inherit;
+    width: 100%;
+}
+#join-meeting{
+    background: #d32f2f;
+    border-radius: 30px;
+    font-family: inherit;
+    width: 100%;
 }
 .modal{
     border-radius: 30px;
+}
+.meeting-modal{
+    
 }
 @media screen and (min-width:468px) {
     .container{
