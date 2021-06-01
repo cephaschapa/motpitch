@@ -22,9 +22,11 @@ nav{
 }
 
 #nav-mobile{
-    left: 200px;
+    left: 300px;
     position: relative;
     color: #d32f2f;
+    width: 100%;
+    top:-100px;
 }
 #nav-mobile li a{
     color: #fff;
@@ -174,6 +176,7 @@ nav{
         margin-left: 100px !important;
         margin-right: 0px !important; 
         margin: 0px;
+        width: 100%;
     }
 
     .section-slider{
