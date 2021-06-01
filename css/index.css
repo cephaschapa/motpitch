@@ -70,7 +70,7 @@ nav{
 }
 .card .card-image img{
     border-top-left-radius: 20px !important;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px !important;
 }
 .section-videos{
     background: #d32f2f;
@@ -98,8 +98,9 @@ nav{
 .section-heading{
     background: url('../assets/images/hero1.jpg') no-repeat center;
     background-size: cover;
-    height: 250px;
+    height: 300px;
     position: relative;
+    padding-bottom: 50px !important;
 }
 .section-heading .box-mid{
     position: relative;
@@ -171,14 +172,32 @@ nav{
     /* border: 1px solid #000; */
     text-align: center;
 }
+.resource-btn{
+    background: #d32f2f;
+    border-radius: 30px;
+}
 @media screen and (min-width:468px) {
-    .container{
+    /* .container{
         margin-left: 100px !important;
         margin-right: 0px !important; 
         margin: 0px;
         width: 100%;
+    } */
+    .card{
+        width: 300px;
+        margin: auto;
     }
-
+    .card .card-image img {
+        display: block;
+        border-radius: 2px 2px 0 0;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        margin: auto;
+    }
     .section-slider{
         height: 650px !important;
         position: relative;
@@ -197,5 +216,10 @@ nav{
     .section-heading .container{
         /* margin-left: 0 !important; */
     }
-
+    .section-partners{
+        text-align: center;
+    }
+    .section-partners .card{
+        width: 150px;
+    }   
 }
